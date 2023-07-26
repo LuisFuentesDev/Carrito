@@ -20,10 +20,7 @@ class Adapter : RecyclerView.Adapter<Adapter.ViewHolder>() {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = inventarioZapatilla[position]
         holder.bind(item)
-        holder.itemView.setOnClickListener {
-            val navController = Navigation.findNavController(it)
-            navController.navigate(R.id.action_zapatillasFragment_to_detalleFragment)
-        }
+
     }
 
     override fun getItemCount(): Int {

@@ -48,16 +48,19 @@ class DetalleFragment : Fragment() {
 
     private fun initListener() {
         binding.textViewNombre.text = param1
-        binding.textViewPrecio.text = "$$param2"
+        binding.textViewPrecio.text = param2
         binding.imageZapatilla.load(param3)
 
         botonComprar()
         botonVolver()
+
     }
+
+
 
     private fun botonComprar() {
         binding.buttonComprar.setOnClickListener {
-            Toast.makeText(requireContext(), "Añadido al carro", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "Añadido al carrito", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -66,7 +69,7 @@ class DetalleFragment : Fragment() {
             val navController = Navigation.findNavController(requireView())
             navController.navigate(R.id.action_detalleFragment_to_zapatillasFragment)
         }
-        }
+    }
 
 
     companion object {

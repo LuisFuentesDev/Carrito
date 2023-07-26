@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.example.carrito.databinding.FragmentZapatillasBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -46,7 +47,11 @@ class ZapatillasFragment : Fragment() {
         val listaZapatos = zapatos.getZapatillas()
         adapter.setData(listaZapatos)
         binding.recyclerViewZapatillas.adapter = adapter
+
+
     }
+
+
 
     companion object {
         /**
