@@ -7,10 +7,10 @@
     tools:context=".DetalleFragment" >
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageZapatilla"
         android:layout_width="269dp"
         android:layout_height="258dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="104dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,9 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="109dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="@+id/imageZapatilla"
+        app:layout_constraintStart_toStartOf="@+id/imageZapatilla"
+        app:layout_constraintTop_toBottomOf="@+id/imageZapatilla" />
 
     <TextView
         android:id="@+id/textViewPrecio"
@@ -41,10 +41,19 @@
         android:id="@+id/buttonComprar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="48dp"
         android:text="COMPRAR"
         app:layout_constraintEnd_toEndOf="@+id/textViewPrecio"
-        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="@+id/textViewPrecio"
         app:layout_constraintTop_toBottomOf="@+id/textViewPrecio" />
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
